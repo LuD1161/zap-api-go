@@ -34,6 +34,7 @@ type Interface interface {
 	Break() *Break
 	Context() *Context
 	Core() *Core
+	Exim() *Exim
 	Exportreport() *Exportreport
 	ForcedUser() *ForcedUser
 	Graphql() *Graphql
@@ -125,6 +126,11 @@ func (c *Client) Context() *Context {
 // Core() returns a Core client
 func (c *Client) Core() *Core {
 	return &Core{c}
+}
+
+// Exim() returns a Exim client
+func (c *Client) Exim() *Exim {
+	return &Exim{c}
 }
 
 // Exportreport() returns a Exportreport client

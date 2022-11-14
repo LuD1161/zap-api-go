@@ -27,7 +27,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zaproxy/zap-api-go/zap"
+	"github.com/LuD1161/zap-api-go"
 )
 
 var target string
